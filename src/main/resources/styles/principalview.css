@@ -1,0 +1,18 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*.mainFxmlClass {*/
+    .buttonh {
+        -fx-text-fill: #000000;
+        -fx-background-color: white;
+        -fx-border-style: hidden hidden solid hidden;
+        -fx-border-color: rgba(0, 0, 0, .2);
+    }
+    
+    .buttonh:hover {
+        -fx-background-color: #2276B3;
+        -fx-text-fill: #ffffff;
+        -fx-text-alignment: center;
+    }
+/*}*/

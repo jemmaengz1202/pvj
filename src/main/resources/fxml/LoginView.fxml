@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="280.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jemmaengz.pvj.LoginController">
+   <children>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="276.0" prefWidth="392.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField id="txtfUsuario" fx:id="txtfUsuario" focusColor="#0099bc" layoutX="78.0" layoutY="74.0" prefHeight="25.0" prefWidth="237.0" promptText="Usuario" />
+            <JFXPasswordField id="txtfContrasena" fx:id="txtfContrasena" focusColor="#0099bc" layoutX="78.0" layoutY="138.0" prefHeight="25.0" prefWidth="237.0" promptText="Contraseña" />
+            <JFXButton fx:id="btnAcceder" buttonType="RAISED" layoutX="154.0" layoutY="203.0" onAction="#acceder" prefHeight="37.0" prefWidth="74.0" ripplerFill="WHITE" style="-fx-background-color: #49b2fe;" text="Acceder" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="49.0" fitWidth="52.0" layoutX="171.0" layoutY="14.0">
+               <image>
+                  <Image url="@../imagenes/icon_login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

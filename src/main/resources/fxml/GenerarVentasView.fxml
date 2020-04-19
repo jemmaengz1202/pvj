@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="604.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jemmaengz.pvj.GenerarVentasController">
+     <children>
+      <TableView fx:id="tabla" layoutX="11.0" layoutY="65.0" prefHeight="367.0" prefWidth="585.0">
+        <columns>
+          <TableColumn fx:id="cantidadColumn" prefWidth="75.0" text="Cantidad" />
+          <TableColumn fx:id="nombreColumn" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="precioColumn" prefWidth="180.0" text="Precio unitario" />
+            <TableColumn fx:id="subtotalColumn" prefWidth="62.0" text="Subtotal" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXTextField fx:id="txfBusqueda" alignment="TOP_CENTER" layoutX="37.0" layoutY="13.0" prefHeight="25.0" prefWidth="254.0" promptText="⎆ Código del producto">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="lblTotal" layoutX="396.0" layoutY="441.0" prefHeight="71.0" prefWidth="225.0" text="\$0.00" textAlignment="RIGHT" underline="true">
+         <font>
+            <Font name="Arial Black" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTexto1" layoutX="193.0" layoutY="449.0" prefHeight="55.0" prefWidth="195.0" text="Total:" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnCerrarVenta" layoutX="388.0" layoutY="14.0" prefHeight="33.0" prefWidth="209.0" ripplerFill="WHITE" style="-fx-background-color: #2276B3;" text="✓ Cerrar venta" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

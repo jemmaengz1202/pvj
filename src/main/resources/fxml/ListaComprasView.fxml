@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="com.jemmaengz.pvj.ListaComprasController">
+    <children>
+      <TableView fx:id="tabla" layoutX="29.0" layoutY="91.0" prefHeight="430.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="fechaColumn" prefWidth="75.0" text="Fecha" />
+          <TableColumn fx:id="precioColumn" prefWidth="180.0" text="Precio" />
+          <TableColumn fx:id="proveedorColumn" prefWidth="75.0" text="Proveedor" />
+          <TableColumn fx:id="cajeroColumn" prefWidth="75.0" text="Cajero" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXTextField fx:id="txfBusqueda" alignment="TOP_CENTER" layoutX="20.0" layoutY="31.0" prefHeight="26.0" prefWidth="262.0" promptText="🔎 Búsqueda" />
+      <JFXDatePicker fx:id="datePicker" defaultColor="#2276b3" layoutX="321.0" layoutY="32.0" prefHeight="25.0" prefWidth="269.0" promptText="                                   Fecha" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

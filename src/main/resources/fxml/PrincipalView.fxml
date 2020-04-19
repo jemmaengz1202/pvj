@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="786.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jemmaengz.pvj.PrincipalController">
+    <stylesheets>
+        <URL value="@/styles/principalview.css" />
+        <URL value="@/styles/snackbar.css" />
+    </stylesheets>
+    <children>
+      <AnchorPane fx:id="navigationMenuPane" layoutX="-3.0" prefHeight="584.0" prefWidth="185.0" style="-fx-background-color: #656565;" stylesheets="@../styles/principalview.css">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="17.0" layoutX="84.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="81.0" layoutY="26.0" prefHeight="24.0" prefWidth="23.0" text="PVJ" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnInicio" accessibleText="INICIO" layoutY="50.0" onAction="#btnInicioClicked" prefHeight="46.0" prefWidth="185.0" ripplerFill="WHITE" styleClass="buttonh" text="INICIO">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnProductos" accessibleText="PRODUCTOS" layoutY="96.0" prefHeight="46.0" prefWidth="185.0" ripplerFill="WHITE" styleClass="buttonh" text="PRODUCTOS">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCompras" accessibleText="COMPRAS" layoutY="142.0" prefHeight="46.0" prefWidth="185.0" ripplerFill="WHITE" styleClass="buttonh" text="COMPRAS">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnVentas" accessibleText="VENTAS" layoutY="188.0" prefHeight="46.0" prefWidth="185.0" ripplerFill="WHITE" styleClass="buttonh" text="VENTAS">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnReportes" accessibleText="REPORTES" layoutY="234.0" prefHeight="46.0" prefWidth="185.0" ripplerFill="WHITE" styleClass="buttonh" text="REPORTES">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnUsuarios" accessibleText="USUARIOS" layoutY="280.0" prefHeight="46.0" prefWidth="185.0" ripplerFill="WHITE" styleClass="buttonh" text="USUARIOS">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="statusBarPane" layoutX="182.0" prefHeight="50.0" prefWidth="604.0" style="-fx-background-color: #555555;">
+         <left>
+            <Label fx:id="txtCabecera" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="175.0" text="Inicio" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets left="15.0" />
+               </BorderPane.margin>
+            </Label>
+         </left>
+         <center>
+            <Label fx:id="txtBienvenida" prefHeight="17.0" prefWidth="196.0" text="Bienvenido Juvenal Enríquez" textFill="WHITE" BorderPane.alignment="CENTER_LEFT">
+               <BorderPane.margin>
+                  <Insets left="40.0" />
+               </BorderPane.margin>
+            </Label>
+         </center>
+         <right>
+            <JFXButton fx:id="btnLogOut" onAction="#btnLogOutClick" prefHeight="25.0" prefWidth="108.0" ripplerFill="WHITE" style="-fx-background-color: #ff6663;" text="Cerrar sesión" textFill="WHITE" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="20.0" />
+               </BorderPane.margin>
+            </JFXButton>
+         </right>
+      </BorderPane>
+      <AnchorPane fx:id="mainPane" layoutX="182.0" layoutY="50.0" prefHeight="533.0" prefWidth="604.0" />
+   </children>
+</AnchorPane>

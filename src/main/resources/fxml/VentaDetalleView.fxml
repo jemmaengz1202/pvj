@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141">
+    <children>
+      <TableView fx:id="tabla" layoutX="11.0" layoutY="65.0" prefHeight="367.0" prefWidth="585.0">
+        <columns>
+          <TableColumn fx:id="cantidadColumn" prefWidth="75.0" text="Cantidad" />
+          <TableColumn fx:id="nombreColumn" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="precioColumn" prefWidth="180.0" text="Precio unitario" />
+            <TableColumn fx:id="subtotalColumn" prefWidth="62.0" text="Subtotal" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="lblTotal" layoutX="396.0" layoutY="441.0" prefHeight="71.0" prefWidth="225.0" text="\$0.00" textAlignment="RIGHT" underline="true">
+         <font>
+            <Font name="Arial Black" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="449.0" prefHeight="55.0" prefWidth="195.0" text="Total:" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnCerrarVenta" layoutX="426.0" layoutY="13.0" prefHeight="33.0" prefWidth="166.0" ripplerFill="WHITE" style="-fx-background-color: #FF6663;" text="🗑 Eliminar venta" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblCajero" layoutX="14.0" layoutY="39.0" text="Cajera: Juan Emmanuel Enriquez Genzalezl" />
+      <Label fx:id="lblId" layoutX="14.0" layoutY="456.0" prefHeight="42.0" prefWidth="148.0" text="Identificader de cempra: 123441242" textFill="#1b6090" wrapText="true" />
+      <Label fx:id="lblFecha" layoutX="14.0" layoutY="14.0" text="Fecha: 31/12/1992 12:24">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

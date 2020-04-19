@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="604.0" style="-fx-background-color: #555;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jemmaengz.pvj.GenerarReporteVentasFechaController">
+    <children>
+        <JFXDatePicker fx:id="datePicker" defaultColor="#2276b3" layoutX="168.0" layoutY="36.0" prefHeight="25.0" prefWidth="269.0" promptText="                                   Fecha" style="-fx-background-color: white;" />
+      <Label layoutX="146.0" layoutY="117.0" text="Total de Ventas" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="243.0" text="Total de Compras" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="217.0" layoutY="171.0" text="\$20000.00" textAlignment="CENTER" textFill="#009688">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCompras" layoutX="217.0" layoutY="297.0" text="\$20000.00" textAlignment="CENTER" textFill="#ffc107">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="372.0" text="Diferencia" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDiferencia" layoutX="217.0" layoutY="426.0" text="\$20000.00" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
