@@ -2,4 +2,4 @@ dist/
 target/
 .vscode
 .settings
-.env
+src/main/resources/.env
