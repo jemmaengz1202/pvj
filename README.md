@@ -1,6 +1,6 @@
 # PVJ
 
-[Logo](src/main/resources/imagenes/logo.png)
+![Logo](src/main/resources/imagenes/logo.png)
 
 Software de Punto de Venta simple para tiendas de abarrotes, desarrollada para JDK 11 y MariaDB.
 
