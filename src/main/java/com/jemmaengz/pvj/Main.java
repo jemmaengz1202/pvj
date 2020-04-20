@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextFormatter;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.util.converter.IntegerStringConverter;
 import org.hibernate.Session;
@@ -58,7 +59,7 @@ public class Main extends Application {
             stage.setScene(scene);
             stage.setResizable(false);
             stage.setTitle("PVJ - Login");
-            //stage.getIcons().add(new Image(getClass().getResourceAsStream("/imagenes/favicon_little.png")));
+            stage.getIcons().add(new Image(Main.class.getResourceAsStream("/imagenes/favicon-32x32.png")));
 
             stage.show();
 
@@ -81,7 +82,6 @@ public class Main extends Application {
         }
     }
     public static void main(String[] args) {
-        Main.session = HibernateUtil.getSessionFactory().openSession();
         launch(args);
     }
     
