@@ -27,8 +27,8 @@ public class HibernateUtil {
         settings.put("hibernate.connection.url", Utilities.dotenv.get("DB_URL"));
         settings.put("hibernate.connection.username", Utilities.dotenv.get("DB_USER"));
         settings.put("hibernate.connection.password", Utilities.dotenv.get("DB_PASSWORD"));
-        settings.put("hibernate.show_sql", Utilities.dotenv.get("PVJ_ENV", "").equals("prod") ? "false" : "true");
-        settings.put("hibernate.format_sql", Utilities.dotenv.get("PVJ_ENV", "").equals("prod") ? "false" : "true");
+        settings.put("hibernate.show_sql", Utilities.dotenv.get("PVJ_ENV", "").equals("dev") ? "true" : "false");
+        settings.put("hibernate.format_sql", Utilities.dotenv.get("PVJ_ENV", "").equals("dev") ? "true" : "false");
         settings.put("hibernate.hbm2ddl.auto", "update");
 
         registryBuilder.applySettings(settings);
